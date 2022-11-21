@@ -1,5 +1,3 @@
-package Day4_Array;
-
 public class twoSumTwo {
     public static void main(String[] args) {
         

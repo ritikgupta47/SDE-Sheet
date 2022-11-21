@@ -1,4 +1,3 @@
-package Day4_Array;
 import java.util.*;
 public class twoSum {
     public static void main(String[] args) {

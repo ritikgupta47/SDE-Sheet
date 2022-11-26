@@ -1,4 +1,4 @@
-package Day7LL_Array;
+
 import java.util.*;
 class sum3 {
     public static void main(String[] args) {

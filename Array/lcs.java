@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution   {
+class LCS   {
     public int longestConsecutive(int[] nums) {
         HashSet<Integer> set = new HashSet<>();
         for(int num : nums){

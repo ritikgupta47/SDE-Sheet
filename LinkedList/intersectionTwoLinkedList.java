@@ -40,3 +40,38 @@ public class Solution {
         return null;
     }
 }
+
+
+// Approach two better
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
+public class Solution {
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        ListNode boltA = headA;
+        ListNode boltB = headB;
+
+        while(boltA != boltB){
+            if(boltA == null){
+                boltA = headB;
+            }else{
+                boltA = boltA.next;
+            }
+            if(boltB == null){
+                boltB = headA;
+            }else{
+                boltB = boltB.next;
+            }
+        } 
+        return boltA;
+    }
+}
